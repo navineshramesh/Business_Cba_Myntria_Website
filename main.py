@@ -1,5 +1,9 @@
 
+
+
+
 from flask import Flask, abort, render_template, redirect, url_for, flash, request, session
+app = Flask(__name__)
 @app.route("/home")
 def about():
     return render_template("index.html")
